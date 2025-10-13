@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Tradutor LIBRAS</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img id="app-logo" src="/static/images/logo_claro.png" alt="Logo Libre-se">
+            <button id="theme-toggle-btn">☀︎</button>
+        </div>
+
+        <div class="translation-interface">
+            
+            <div class="input-area">
+                <select id="lang-origem">
+                    <option value="pt-br">Português (Brasil)</option>
+                </select>
+                <textarea id="textInput" placeholder="Digite aqui..."></textarea>
+                <div class="buttons">
+                    <button id="btn-apagar">Apagar</button>
+                    <button id="btn-traduzir" onclick="traduzirTexto()">Traduzir</button>
+                </div>
+            </div>
+
+            <div class="output-area">
+                <select id="lang-destino">
+                    <option value="libras">Língua Brasileira de Sinais (LIBRAS)</option>
+                </select>
+                <div id="caixa-traducao-video" class="resultado video-placeholder">
+                    <p>A tradução em LIBRAS (vídeo) aparecerá aqui.</p>
+                </div>
+            </div>
+
+        </div> 
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    
+    </body>
+</html>
