@@ -31,8 +31,9 @@
     --result-bg: #293849;
 }
 
-
+/* -------------------------------------- */
 /* Configurações básicas e transições */
+/* -------------------------------------- */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -45,7 +46,6 @@ body {
 /* -------------------------------------- */
 /* Container Principal */
 /* -------------------------------------- */
-
 *, *::before, *::after {
     box-sizing: content-box; 
 }
@@ -96,8 +96,6 @@ body {
     flex-direction: row; 
     gap: 20px;
     width: 100%;
-    /* ATENÇÃO: Se as caixas tiverem alturas muito diferentes, 
-       o alinhamento vertical padrão será no topo. */
     align-items: flex-start; 
 }
 
@@ -123,12 +121,10 @@ select, textarea {
     width: calc(100% - 30px);
 }
 
-/* ALTERAÇÃO SOLICITADA 1: Área de texto com 300px de altura */
+/* ALTERAÇÃO SOLICITADA 1: Área de texto com 200px de altura */
 textarea {
     height: 200px; 
     resize: none;
-    /* Removemos flex-grow para que a altura fixa seja respeitada */
-    /* flex-grow: 1; */
 }
 
 /* Botões */
@@ -167,14 +163,8 @@ textarea {
 .output-area .resultado {
     border: 2px solid var(--highlight-color);
     border-radius: 8px;
-    
-    /* ALTERAÇÃO SOLICITADA 2: Área de resultado com 600px de altura */
     min-height: 600px; 
     height: 600px; 
-    
-    /* Removemos flex-grow para que a altura fixa seja respeitada */
-    /* flex-grow: 1; */
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -183,6 +173,27 @@ textarea {
     color: var(--highlight-color);
     text-align: center;
     transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+    position: relative; /* Necessário para posicionar o botão do VLibras */
+}
+
+/* -------------------------------------- */
+/* POSICIONAMENTO DO BOTÃO VLibras */
+/* -------------------------------------- */
+
+/* O botão ficará dentro da caixa azul, no canto inferior direito */
+#caixa-traducao-video [vw] {
+    position: absolute !important;
+    bottom: 15px;
+    right: 20px;
+    transform: scale(0.9);
+}
+
+/* Caso queira centralizar o botão na parte inferior */
+#caixa-traducao-video.center-vlibras [vw] {
+    position: relative !important;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
 }
 
 /* -------------------------------------- */
@@ -202,10 +213,8 @@ textarea {
         width: 100%; 
     }
 
-    /* Em telas pequenas, redefinimos as alturas para serem mais adequadas ao celular */
     textarea {
         height: 150px;
-        
     }
     
     .output-area .resultado {
