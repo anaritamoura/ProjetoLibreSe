@@ -1,0 +1,337 @@
+/* =========================================================================
+   1. VARIÁVEIS DE TEMA (MODO CLARO e ESCURO)
+   ========================================================================= */
+
+/* Variáveis CSS (MODO CLARO - Padrão) */
+:root {
+    --bg-primary: #f4f4f4; /* Fundo da página */
+    --bg-secondary: #ffffff; /* Fundo do container principal */
+    --but-secondary: #ffffff;
+    --text-color: #333333;
+    --border-color: #ccc;
+    --highlight-color: #003bb3; /* Cor principal de destaque (Gerar) */
+    --button-clear-bg: #8e8c8cab; /* Fundo dos botões de Apagar */
+    --toggle: #ccc; /* Fundo do botão de tema */
+    --button-clear-text: #333;
+    --input-bg: #ffffff; /* Fundo das áreas de texto/seleção/caixas de resultado */
+    --result-bg: #e6f2ff; /* Fundo da área de resultado principal (VLibras) */
+}
+
+/* Variáveis CSS (MODO ESCURO) */
+.dark-mode {
+    --bg-primary: #121212;
+    --bg-secondary: #1e1e1e;
+    --text-color: #f0f0f0;
+    --border-color: #555;
+    --highlight-color: #003bb3;
+    --button-clear-bg: #444;
+    --toggle: #555;
+    --button-clear-text: #f0f0f0;
+    --input-bg: #2d2d2d;
+    --result-bg: #293849;
+}
+
+
+/* =========================================================================
+   2. BASE E UTENSÍLIOS GLOBAIS
+   ========================================================================= */
+
+/* Configurações básicas e transições */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-primary);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+    min-height: 100vh;
+}
+
+/* Reset de Box Model para layout mais previsível */
+*, *::before, *::after {
+    box-sizing: border-box; 
+}
+
+/* Classes de Utilidade */
+.oculto {
+    display: none !important;
+}
+.mostrar-texto {
+    display: block !important;
+}
+
+
+/* =========================================================================
+   3. LAYOUT GERAL E CONTAINER
+   ========================================================================= */
+
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: var(--bg-secondary);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Interface de Tradução Horizontal */
+.translation-interface {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.input-area,
+.output-area {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 10px;
+}
+
+
+/* =========================================================================
+   4. COMPONENTES (HEADER, BOTÕES, FORMS)
+   ========================================================================= */
+
+/* --- A. Cabeçalho --- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#app-logo {
+    max-width: 250px;
+    height: auto;
+}
+
+/* Botão de Tema */
+#theme-toggle-btn {
+    padding: 10px 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--toggle);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* --- B. Formulário (Select e Textarea) --- */
+select, textarea {
+    padding: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 1em;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    transition: border-color 0.3s, background-color 0.3s, color 0.3s;
+    width: 100%; 
+}
+
+select {
+    /* Customização da Seta */
+    appearance: none; /* Esconde a seta nativa do OS */
+    -webkit-appearance: none;
+    
+    /* Adiciona padding para que a seta não sobreponha o texto */
+    padding-right: 40px; 
+    
+    /* Seta SVG customizada. O 'currentColor' garante que ela use o var(--text-color) do tema. */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='currentColor' d='M9.293 12.95l-.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 15px center; /* Posição à direita, centralizada verticalmente */
+    background-size: 15px;
+}
+
+textarea {
+    height: 200px;
+    resize: none;
+}
+
+/* --- C. Botões de Ação --- */
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.buttons button {
+    flex: 1; /* Os dois primeiros botões de Apagar herdarão este valor (25% cada) */
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Estilo para Apagar/Apagar Tudo (Primeiro e Segundo botões) */
+.buttons button:nth-child(-n+2) { 
+    background-color: var(--button-clear-bg);
+    color: var(--button-clear-text);
+}
+
+/* Estilo para Gerar Tradução (Último botão) */
+.buttons button:last-child {
+    flex: 2; /* Faz com que este botão ocupe 50% do espaço (1:1:2 = 25%, 25%, 50%) */
+    background-color: var(--highlight-color);
+    color: var(--but-secondary);
+}
+
+.buttons button:hover {
+    filter: brightness(1.2); 
+}
+
+
+/* =========================================================================
+   5. ÁREAS DE SAÍDA (RESULTADO E LOG DE TEXTOS GERADOS)
+   ========================================================================= */
+
+/* Área de Resultado principal (onde fica o VLibras) */
+.output-area .resultado {
+    border: 2px solid var(--highlight-color);
+    border-radius: 8px;
+    min-height: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--result-bg);
+    font-size: 1.2em;
+    color: var(--highlight-color);
+    text-align: center;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+/* Container onde as novas caixas de resultado são anexadas */
+#resultadosContainer {
+    display: flex;
+    flex-direction: column;
+    /* Para que os resultados mais recentes fiquem em cima */
+    
+    /* 💡 AJUSTE ATUALIZADO: Aumentando para 320px para preencher o container de 600px */
+    max-height: 335px; 
+    overflow-y: auto; /* Adiciona barra de rolagem vertical */
+    padding-right: 10px; /* Adiciona um pequeno padding para a barra de rolagem */
+}
+
+/* --- ESTILOS DA BARRA DE ROLAGEM (Scrollbar) --- */
+/* (Funciona em navegadores baseados em WebKit: Chrome, Safari, Edge) */
+
+#resultadosContainer::-webkit-scrollbar {
+    width: 8px; 
+}
+
+#resultadosContainer::-webkit-scrollbar-track {
+    background: transparent; /* A trilha fica transparente */
+}
+
+/* Polegar (Thumb) - Padrão (Modo Claro) */
+#resultadosContainer::-webkit-scrollbar-thumb {
+    background-color: var(--border-color); /* Cor clara do polegar */
+    border-radius: 10px;
+    border: 2px solid var(--input-bg); /* Borda com a cor de fundo do container */
+}
+
+#resultadosContainer::-webkit-scrollbar-thumb:hover {
+    background-color: var(--highlight-color);
+}
+
+/* Dark Mode Scrollbar Overrides (Overscreve o polegar para o modo escuro) */
+.dark-mode #resultadosContainer::-webkit-scrollbar-thumb {
+    background-color: var(--button-clear-bg); /* Cor escura do polegar */
+    border: 2px solid var(--bg-secondary); /* Borda com a cor de fundo (darker) */
+}
+/* --- FIM DOS ESTILOS DA BARRA DE ROLAGEM --- */
+
+/* Estilo para cada item de log gerado dinamicamente pelo JS */
+.resultado-item {
+    padding: 15px;
+    border: 1px solid var(--border-color); 
+    border-radius: 4px; 
+    margin-bottom: 10px; 
+    
+    background-color: var(--input-bg);
+    color: var(--text-color); 
+    
+    font-size: 1em;
+    line-height: 1.5;
+    white-space: pre-wrap; 
+    word-wrap: break-word;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+
+/* =========================================================================
+   6. RESPONSIVIDADE E VLIBRAS
+   ========================================================================= */
+
+@media (max-width: 768px) {
+    .translation-interface {
+        flex-direction: column;
+    }
+    
+    .container {
+        margin: 10px;
+        padding: 10px; 
+    }
+
+    /* Garante que select/textarea e os itens de log usem 100% */
+    select, 
+    textarea,
+    .resultado-item {
+        width: 100%; 
+    }
+    
+    /* Em telas pequenas, redefinimos as alturas */
+    textarea {
+        height: 150px;
+    }
+
+    .output-area .resultado {
+        min-height: 300px;
+        height: 300px;
+    }
+    
+    /* 💡 AJUSTE ATUALIZADO RESPONSIVIDADE: Aumentando para 120px para melhor aproveitamento no mobile */
+    #resultadosContainer {
+        max-height: 120px; /* Alinha com a altura do container VLibras no mobile */
+    }
+}
+
+/* --- Ajustes para o VLibras (Manutenção da posição) --- */
+
+div[vw].enabled,
+div[vw-access-button].active {
+    position: static !important; 
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    transform: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: fit-content !important; 
+    display: inline-block !important;
+}
+
+/* --- AJUSTE PARA O VLIBRAS PREENCHER 100% DO CONTAINER (VÍDEO) --- */
+
+div[vw].enabled {
+    width: 100% !important; 
+    height: 100% !important;
+    display: block !important;
+}
+
+div[vw-plugin-wrapper] {
+    width: 100% !important;
+    height: 100% !important;
+    position: relative !important; 
+}
