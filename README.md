@@ -104,12 +104,12 @@ Se você tiver sugestões, encontrar bugs ou quiser adicionar novas funcionalida
 
 ## ✒️ Autoras
 
-👩‍💻 Ana Rita Correia
-👩‍💻 Laís Moura
-👩‍💻 Mariana Viana
-👩‍💻 Margaret Santos
-👩‍💻 Natana Batista
-👩‍💻 Nathália Monteiro
+👩‍💻 Ana Rita Correia  
+👩‍💻 Laís Moura  
+👩‍💻 Mariana Viana  
+👩‍💻 Margaret Santos  
+👩‍💻 Natana Batista  
+👩‍💻 Nathália Monteiro  
 
 
 📧 [adicione seu email opcionalmente]  
