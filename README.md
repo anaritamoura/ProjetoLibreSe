@@ -6,7 +6,7 @@
 
 ---
 
-## 🧠 Sobre o Projeto
+## Sobre o Projeto
 
 O **LIBRE-SE** é um projeto de **front-end** desenvolvido para atuar como um **tradutor de texto para a Língua Brasileira de Sinais (LIBRAS)**.
 
@@ -16,18 +16,18 @@ Trata-se de uma aplicação **puramente front-end**, utilizando tecnologias web 
 
 ---
 
-## 🚀 Funcionalidades
+## Funcionalidades
 
-- 📝 **Tradução de Texto:** Campo de entrada para que o usuário digite o texto a ser traduzido.  
-- 🧩 **Widget VLibras:** Integração com o widget para visualização da tradução em LIBRAS.  
-- 🎨 **Interface Limpa:** Estrutura básica com HTML, CSS e JavaScript.  
-- ▶️ **Botão de Ação:** Inicia o processo de tradução.  
-- 🧹 **Limpar Texto:** Apaga o conteúdo do campo de texto.  
-- 🌗 **Tema (Opcional):** Alterna entre modo claro e escuro (`theme-toggle-btn`).  
+- **Tradução de Texto:** Campo de entrada para que o usuário digite o texto a ser traduzido.  
+- **Widget VLibras:** Integração com o widget para visualização da tradução em LIBRAS.  
+- **Interface Limpa:** Estrutura básica com HTML, CSS e JavaScript.  
+- **Botão de Ação:** Inicia o processo de tradução.  
+- **Limpar Texto:** Apaga o conteúdo do campo de texto.  
+- **Tema (Opcional):** Alterna entre modo claro e escuro (`theme-toggle-btn`).  
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 | Tecnologia | Categoria |
 |-------------|------------|
@@ -38,7 +38,7 @@ Trata-se de uma aplicação **puramente front-end**, utilizando tecnologias web 
 
 ---
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```bash
 PROJETOLIBRESE-API&FRONT/
@@ -51,20 +51,20 @@ PROJETOLIBRESE-API&FRONT/
 
 ---
 
-## ⚙️ Como Executar o Projeto
+## Como Executar o Projeto
 
 Como este é um projeto puramente **Front-end (HTML, CSS e JavaScript Vanilla)**, sua execução é simples:
 
 ---
 
-### 🔧 Pré-requisitos
+### Pré-requisitos
 
 - Nenhuma dependência externa complexa.  
 - Apenas um **navegador moderno** (Chrome, Firefox, Edge, etc).
 
 ---
 
-### 🪜 Passo a passo
+### Passo a passo
 
 #### 1️⃣ Clonar o Repositório
 ```bash
@@ -80,9 +80,9 @@ Abra o arquivo `index.html` diretamente em seu navegador.
 
 ---
 
-## 🤝 Contribuições
+## Contribuições
 
-Contribuições são **bem-vindas!** 🎉  
+Contribuições são **bem-vindas!**  
 Se você tiver sugestões, encontrar bugs ou quiser adicionar novas funcionalidades:
 
 1. Faça um **fork** do projeto.  
@@ -102,18 +102,18 @@ Se você tiver sugestões, encontrar bugs ou quiser adicionar novas funcionalida
 
 ---
 
-## ✒️ Autoras
+## Autoras
 
-👩‍💻 Ana Rita Correia  
-👩‍💻 Laís Moura  
-👩‍💻 Mariana Viana  
-👩‍💻 Margaret Santos  
-👩‍💻 Natana Batista  
-👩‍💻 Nathália Monteiro  
+Ana Rita Correia  
+Laís Moura  
+Mariana Viana  
+Margaret Santos  
+Natana Batista  
+Nathália Monteiro  
 
 
-📧 [adicione seu email opcionalmente]  
-🔗 [adicione link para LinkedIn ou GitHub se quiser]  
+[adicione seu email opcionalmente]  
+[adicione link para LinkedIn ou GitHub se quiser]  
 
 ---
 
