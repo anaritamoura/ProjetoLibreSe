@@ -1,72 +1,122 @@
-LIBRE-SE
-O LIBRRE-SE é um projeto de front-end desenvolvido para atuar como um Tradutor de Texto para Língua Brasileira de Sinais (LIBRAS).
+<h1 align="center">🤟 LIBRE-SE</h1>
 
-O objetivo principal é oferecer uma interface simples e acessível onde o usuário possa digitar um texto e visualizar a tradução em LIBRAS utilizando o widget VLibras.
+<p align="center">
+  <em>Tradutor de Texto para Língua Brasileira de Sinais (LIBRAS)</em>
+</p>
 
-O projeto é uma aplicação puramente front-end, utilizando tecnologias web padrão para focar na interface do usuário e na integração com o widget de tradução.
+---
 
-🚀 Funcionalidades
-Tradução de Texto: Campo de entrada para que o usuário digite o texto a ser traduzido.
+## 🧠 Sobre o Projeto
 
-Widget VLibras: Integração com o widget para visualização da tradução em LIBRAS.
+O **LIBRE-SE** é um projeto de **front-end** desenvolvido para atuar como um **tradutor de texto para a Língua Brasileira de Sinais (LIBRAS)**.
 
-Interface Limpa: Estrutura básica com HTML, estilização com CSS e lógica de interação com JavaScript.
+O objetivo principal é oferecer uma **interface simples, intuitiva e acessível**, permitindo que o usuário digite um texto e visualize a tradução em LIBRAS através da integração com o **widget VLibras**.
 
-Botão de Ação: Botão para iniciar o processo de tradução.
+Trata-se de uma aplicação **puramente front-end**, utilizando tecnologias web padrão — **HTML, CSS e JavaScript** — com foco na interface do usuário e na integração com a ferramenta de tradução.
 
-Limpar Texto: Botão dedicado para apagar o conteúdo do campo de texto.
+---
 
-Tema (Opcional): Botão para alternar entre temas claro/escuro (theme-toggle-btn).
+## 🚀 Funcionalidades
 
-💻 Sobre o Projeto
-O LIBRRE-SE é um projeto de front-end desenvolvido para atuar como um Tradutor de Texto para Língua Brasileira de Sinais (LIBRAS).
-O objetivo principal é oferecer uma interface simples e acessível onde o usuário possa digitar um texto e visualizar a tradução em LIBRAS utilizando o widget VLibras.
-O projeto é uma aplicação puramente front-end, utilizando tecnologias web padrão para focar na interface do usuário e na integração com o widget de tradução.
+- 📝 **Tradução de Texto:** Campo de entrada para que o usuário digite o texto a ser traduzido.  
+- 🧩 **Widget VLibras:** Integração com o widget para visualização da tradução em LIBRAS.  
+- 🎨 **Interface Limpa:** Estrutura básica com HTML, CSS e JavaScript.  
+- ▶️ **Botão de Ação:** Inicia o processo de tradução.  
+- 🧹 **Limpar Texto:** Apaga o conteúdo do campo de texto.  
+- 🌗 **Tema (Opcional):** Alterna entre modo claro e escuro (`theme-toggle-btn`).  
 
-🚀 Funcionalidades
-•	Tradução de Texto: Campo de entrada para que o usuário digite o texto a ser traduzido.
-•	Widget VLibras: Integração com o widget para visualização da tradução em LIBRAS.
-•	Interface Limpa: Estrutura básica com HTML, estilização com CSS e lógica de interação com JavaScript.
-•	Botão de Ação: Botão para iniciar o processo de tradução.
-•	Limpar Texto: Botão dedicado para apagar o conteúdo do campo de texto.
-•	Tema (Opcional): Botão para alternar entre temas claro/escuro (theme-toggle-btn).
+---
 
-🛠️ Tecnologias Utilizadas
-Tecnologia	Categoria
-HTML5	Estrutura de Conteúdo
-CSS3	Estilização e Layout
-JavaScript	Lógica de Interação
-VLibras Widget	Ferramenta de Acessibilidade/Tradução
+## 🛠️ Tecnologias Utilizadas
 
-📁 Estrutura do Projeto
+| Tecnologia | Categoria |
+|-------------|------------|
+| **HTML5** | Estrutura de Conteúdo |
+| **CSS3** | Estilização e Layout |
+| **JavaScript** | Lógica de Interação |
+| **VLibras Widget** | Ferramenta de Acessibilidade/Tradução |
+
+---
+
+## 📁 Estrutura do Projeto
+
+```bash
 PROJETOLIBRESE-API&FRONT/
-├── index.html/     
-├── logo_claro.png/        
-├── logo_escuro.png        
+├── index.html
+├── logo_claro.png
+├── logo_escuro.png
 ├── script.js
-├── style.css      
+└── style.css
+```
 
-⚙️ Como Executar o Projeto
-Como este é um projeto puramente Front-end (HTML, CSS e JavaScript Vanilla), sua execução é muito simples.
+---
 
-Pré-requisitos
-Não há dependências externas complexas. Apenas um navegador web moderno (Chrome, Firefox, Edge) é necessário.
-1.	Clonar o Repositório
-git clone – FALTA COLOCAR O CAMINHO
-2.	Abrir a Aplicação
-Navegue até o diretório do projeto: cd PROJETOLIBRESE-API&FRONT
-3.	Abra o arquivo index.html diretamente em seu navegador.
+## ⚙️ Como Executar o Projeto
 
-Dica: Clique com o botão direito no arquivo index.html e selecione Abrir com > [Seu Navegador Favorito].
+Como este é um projeto puramente **Front-end (HTML, CSS e JavaScript Vanilla)**, sua execução é simples:
 
-🤝 Contribuição
-Contribuições são bem-vindas! Se você tiver sugestões de melhorias, relatar bugs ou quiser adicionar novas funcionalidades:
+---
 
-1.	Faça um Fork do projeto.
-2.	Crie uma branch para sua feature (git checkout -b feature/NovaFeature).
-3.	Commit suas mudanças (git commit -m 'feat: Adiciona NovaFeature').
-4.	Faça o Push para a branch (git push origin feature/NovaFeature).
-5.	Abra um Pull Request.
+### 🔧 Pré-requisitos
 
-✒️ Autoras
+- Nenhuma dependência externa complexa.  
+- Apenas um **navegador moderno** (Chrome, Firefox, Edge, etc).
 
+---
+
+### 🪜 Passo a passo
+
+#### 1️⃣ Clonar o Repositório
+```bash
+git clone https://github.com/SEU-USUARIO/PROJETOLIBRESE-API-FRONT.git
+```
+#### 2️⃣ Acessar o diretório
+```bash
+cd PROJETOLIBRESE-API-FRONT
+```
+#### 3️⃣ Executar
+Abra o arquivo `index.html` diretamente em seu navegador.  
+💡 **Dica:** clique com o botão direito e selecione **Abrir com > [Seu Navegador Favorito]**.
+
+---
+
+## 🤝 Contribuições
+
+Contribuições são **bem-vindas!** 🎉  
+Se você tiver sugestões, encontrar bugs ou quiser adicionar novas funcionalidades:
+
+1. Faça um **fork** do projeto.  
+2. Crie uma **branch** para sua feature:  
+   ```bash
+   git checkout -b feature/NovaFeature
+   ```
+3. Faça o **commit** das mudanças:
+   ```bash
+   git commit -m "feat: adiciona NovaFeature"
+   ```
+4. Faça o **push** para a branch:
+   ```bash
+   git push origin feature/NovaFeature
+   ```
+5. Abra um **Pull Request**.
+
+---
+
+## ✒️ Autoras
+
+👩‍💻 Ana Rita Correia
+👩‍💻 Laís Moura
+👩‍💻 Mariana Viana
+👩‍💻 Margaret Santos
+👩‍💻 Natana Batista
+👩‍💻 Nathália Monteiro
+
+
+📧 [adicione seu email opcionalmente]  
+🔗 [adicione link para LinkedIn ou GitHub se quiser]  
+
+---
+
+<p align="center">
+  Feito com 💜 para promover a <strong>acessibilidade digital</strong>.
+</p>
