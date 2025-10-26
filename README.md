@@ -106,9 +106,13 @@ Se você tiver sugestões, encontrar bugs ou quiser adicionar novas funcionalida
 
 <a href="https://github.com/anaritamoura">Ana Rita Correia  </a>
 <a href="https://github.com/laisaraujom">Laís Moura </a>
+
 Mariana Viana  
+
 <a href="https://github.com/margaretsantosdeoliveira">Margaret Santos </a>
+
 Natana Batista  
+
 <a href="https://github.com/nmonteiroc">Nathália Monteiro</a>
 
 
