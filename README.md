@@ -109,7 +109,7 @@ Laís Moura
 Mariana Viana  
 Margaret Santos  
 Natana Batista  
-[Nathália Monteiro] (https://github.com/nmonteiroc)
+<a href="https://github.com/nmonteiroc">Nathália Monteiro</a>
 
 
 [adicione seu email opcionalmente]  
