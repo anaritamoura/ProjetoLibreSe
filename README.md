@@ -104,16 +104,14 @@ Se você tiver sugestões, encontrar bugs ou quiser adicionar novas funcionalida
 
 ## Autoras
 
-Ana Rita Correia  
-Laís Moura  
+<a href="https://github.com/anaritamoura">Ana Rita Correia  </a>
+<a href="https://github.com/laisaraujom">Laís Moura </a>
 Mariana Viana  
-Margaret Santos  
+<a href="https://github.com/margaretsantosdeoliveira">Margaret Santos </a>
 Natana Batista  
 <a href="https://github.com/nmonteiroc">Nathália Monteiro</a>
 
 
-[adicione seu email opcionalmente]  
-[adicione link para LinkedIn ou GitHub se quiser]  
 
 ---
 
