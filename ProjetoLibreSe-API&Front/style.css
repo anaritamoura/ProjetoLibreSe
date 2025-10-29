@@ -43,15 +43,15 @@ body {
 
 /* Reset de Box Model para layout mais previsível */
 *, *::before, *::after {
-    box-sizing: border-box;           /* !!!!!!!!!!!!!!!!!!!!!!!!!!! NÃO SABEMOS !!!!!!!!!!!!!!!!!!!!!!!!!!! */
+    box-sizing: border-box;
 }
 
 /* Classes de Utilidade */
 .oculto {
-    display: inside !important;       /* !!!!!!!!!!!!!!!!!!!!!!!!!!! NÃO SABEMOS !!!!!!!!!!!!!!!!!!!!!!!!!!! */
+    display: inside !important;
 }
 .mostrar-texto {
-    display: block !important;        /* !!!!!!!!!!!!!!!!!!!!!!!!!!! NÃO SABEMOS !!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    display: block !important;
 }
 
 
@@ -148,7 +148,7 @@ textarea {
 /* botões abaixo do container de input */
 .buttons {
     display: flex;  /*distribuindo igualmente os espaçamentos*/
-    gap: 10px; /*diatância entre os botões*/
+    gap: 10px; /*distância entre os botões*/
 }
 
 .buttons button {
@@ -287,8 +287,8 @@ textarea {
 /*esse !important força que ele faça além do que o VLibras normalmente faria*/
 
 /*selecionar dois elementos específicos criados pelo Vlibras*/
-div[vw].enabled, /*conteiner principal quando está ativo*/
-div[vw-access-button].active { /*botão flutuante de acesibilidade*/
+div[vw].enabled, /*container principal quando está ativo*/
+div[vw-access-button].active { /*botão flutuante de acessibilidade*/
     position: static !important; /*para sobrescrever o estilo original do Vlibras*/
     /*remover o posicionamento fixo (topo, lateral, fundo e esquerda*/
     top: auto !important;
@@ -312,8 +312,9 @@ div[vw].enabled { /*selecionar a div principal que contem o plugin quando está 
     display: block !important; /*para ocupar toda linha disponível*/
 }
 
-div[vw-plugin-wrapper] { /*envolver o conteúdo do plugin e renderiza o personagem*/
-    width: 100% !important;/*largura do espaço conteiner*/
+div[vw-plugin-wrapper] { /*envolve o conteúdo do plugin e renderiza o personagem*/
+    width: 100% !important;/*largura do espaço container*/
     height: 100% !important;/*altura do espaço disponível*/
     position: relative !important; /*manter o avatar dentro da linha azul*/
 }
+
