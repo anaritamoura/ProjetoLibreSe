@@ -117,6 +117,12 @@ Se você tiver sugestões, encontrar bugs ou quiser adicionar novas funcionalida
 <a href="https://github.com/nmonteiroc">Nathália Monteiro </a>
 
 
+---
+
+## Licença
+
+Este projeto está licenciado sob a **[MIT License](./LICENSE)**.  
+Você pode usar, copiar, modificar e distribuir o código livremente, desde que mantenha os créditos das autoras.
 
 ---
 
